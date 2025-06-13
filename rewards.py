@@ -177,8 +177,8 @@ def reward_count_unpaired_items(completions, sources, references = None, **kwarg
 # Lixical
 
 # pip install spacy
-# python -m spacy download uk_core_news_sm 
-# python -m spacy download en_core_web_sm
+# python -m spacy download uk_core_news_lg 
+# python -m spacy download en_core_web_lg
 
 import spacy
 
