@@ -13,11 +13,13 @@ def count_uppercase_letters(text):
 
 
 def count_non_letters_no_spaces(text):
-    count = 0
-    for char in text:
-        if not unicodedata.category(char).startswith('L') and not char.isspace():
-            count += 1
-    return count
+    # count = 0
+    # for char in text:
+    #     if not unicodedata.category(char).startswith('L') and not char.isspace():
+    #         count += 1
+    # return count
+
+    return len(get_non_letters_no_spaces(text))
 
 # # Example usage:
 # text = "Hello, 世界! 123 Привіт!  😊"
