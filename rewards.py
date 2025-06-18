@@ -39,7 +39,7 @@ def count_non_letters_no_spaces(text):
 #     return tokens
 
 def get_non_letters_no_spaces(text):
-    preserved = set("0123456789()[]{}.,:;!?-+=*/%<>$€₴£¥")
+    preserved = set("0123456789()[]{}.:;!?-+=*/%<>$€₴£¥") # removed ,
     return [char for char in text if char in preserved]
 
 # # Example usage:
@@ -63,7 +63,7 @@ def count_unpaired_items(list1, list2):
         else:
             unmatched_list1.append(c)  # item from list1 has no pair
 
-    print(unmatched_list1, list2_copy)
+    #print(unmatched_list1, list2_copy)
 
     return len(unmatched_list1) + len(list2_copy)
 
